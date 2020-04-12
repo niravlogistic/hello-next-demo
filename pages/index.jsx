@@ -51,7 +51,7 @@ export default class Index extends PureComponent {
 }
 
 const getData = async (page = 1) => {
-  const res = await fetch(`http://api.themoviedb.org/3/movie/popular?api_key=5de339ee88941d862165471adf9d5473&page=${page}`);
+  const res = await fetch(`https://api.themoviedb.org/3/movie/popular?api_key=5de339ee88941d862165471adf9d5473&page=${page}`);
   const data = await res.json()
   console.log(`Show data fetched. Count: ${data.page}`);
   return data;
